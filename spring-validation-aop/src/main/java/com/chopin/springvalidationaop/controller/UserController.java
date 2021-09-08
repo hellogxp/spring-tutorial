@@ -26,7 +26,7 @@ public class UserController {
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseBody
-    public CommonResult create(@Validated UserParam userParam, BindingResult bindingResult) {
+    public CommonResult create(@Validated @RequestBody UserParam userParam, BindingResult bindingResult) {
         CommonResult commonResult;
         int count = userService.createUser(userParam);
         if (count == 1) {
