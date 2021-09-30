@@ -4,7 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
    <packaging>pom</packaging>
    <modules>
-      <module>spring-validation</module>
+      <module>spring-validation-aop</module>
+      <module>spring-validation-exception-handler</module>
+      <module>spring-data-elasticsearch</module>
+      <module>spring-filter-interceptor</module>
+      <module>spring-rocketmq</module>
+      <module>spring-scheduling-tasks</module>
    </modules>
    <parent>
         <groupId>org.springframework.boot</groupId>
